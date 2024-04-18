@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scerept - List of Bookmarklets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* White text color */
+            overflow: hidden; /* Prevent scrolling */
+            background-color: #f7f7f7; /* Light gray background */
+        }
+
+        .background-container,
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place behind other content */
+        }
+
+        .background-container {
+            background-color: rgba(0, 0, 0, 1.2); /* Transparent gray box */
+        }
+
+        .background-image {
+            background-image: url('https://th.bing.com/th/id/OIG3.4cBDJEnSCqk2dwfYXCak?pid=ImgGn'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.5; /* 50% transparency for the image */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for header */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1; /* Ensure header is above the background image */
+        }
+
+        .brand {
+            font-size: 3em;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s; /* Transition effect */
+        }
+
+        .brand.show {
+            opacity: 1; /* Show the text */
+        }
+
+        main {
+            padding: 20px;
+            position: relative;
+            z-index: 1; /* Ensure main content is above the background */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+            color: #fff; /* White text color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff; /* White link color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for footer */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff; /* White text color */
+            z-index: 1; /* Ensure footer is above the background image */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="background-image"></div>
+    <header>
+        <h1 class="brand">Scerept</h1>
+        <p>Enhance your browsing experience and bypass with these handy bookmarklets.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Bypasses</h2>
+            <ul>
+                <li><a href="https://pastebin.com/raw/iJmPEgWr">QuickView (Launcher)</a></li>
+                <li><a href="javascript:fetch(`https://raw.githubusercontent.com/SchoolHacker3/INFINITY-CLOAKER/main/code.js`).then(data=>{data.text().then(text=>{eval(text)})});">Infinity cloaker</a></li>
+                <li><a href="https://pastebin.com/raw/asPwpCgw">Swamp</a></li>
+                <li><a href="https://pastebin.com/raw/ba8AsSrL">Extension Installer</a></li>
+            </ul>
+            <h2>Tools</h2>
+            <ul>
+                <li><a href="https://pastebin.com/raw/1kbD0UMt">ULTIMATE BOOKMARKLET!</a></li>
+                <li><a href="https://pastebin.com/raw/WbcKvsiW">Adblocker</a></li>
+                <li><a href="javascript:(function()%7B(function() %7Bvar x %3D document.createElement("script")%3Bx.src %3D "https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FSnowLord7%2Fdevconsole%40master%2Fmain.js"%3Bx.onload %3D alert("Loaded Developer Console!")%3Bdocument.head.appendChild(x)%3B%7D)()%7D)()">Developer Tools by Snowlord</a></li>
+                <li><a href="https://pastebin.com/raw/qstV3GxW">Blanker (Converts websites to about:blank)</a></li>
+                <li><a href="https://pastebin.com/raw/zHmXfin4">History Flooder (Kind of works)</a></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.brand').classList.add('show');
+        });
+    </script>
+    </html>
